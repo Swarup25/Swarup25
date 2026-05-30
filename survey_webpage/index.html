@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Page</title>
+
+    <link rel="stylesheet" href="resources/css/style.css">
+    
+    <script src="https://kit.fontawesome.com/1e505b91c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="land_main">
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="home"><img src="resources/image/home_FILL1_wght700_GRAD200_opsz48.png"
+                    alt="logo"></a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <div class="text">
+            <div class="land_text">
+                <h1>Welcome to our Website!</h1>
+                <h3>Please take a servey by which we can know more about our clients and improve our website.</h3>
+                <a class="btn btn_1" href="#survey_form">Take Servey</a>
+                <a class="btn btn_2" href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section id="survey_form" class="servey_form">
+        <div class="form_container">
+            <div class="container">
+                <form action="#" class="servey">
+                    <div class="heading">
+                        <hr><h1>Servey Form</h1><hr>
+                    </div> 
+                    <div class="table_container">
+                        <table class="table_1">
+                            <tr>
+                                <td class="name"><label for="name">Name:</label></td>
+                                <td class="age"><label for="age">Age:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="name" placeholder="Name"></td>
+                                <td><input type="number" name="age" placeholder="Age"></td>
+                            </tr>
+                            <tr>
+                                <td class="email"><label for="email">Email:</label></td>
+                                <td class="role"><label for="role">Current Role:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="email" name="email" placeholder="Email"></td>
+                                <td><input type="text" name="role" placeholder="Current Role"></td>
+                            </tr>
+                            
+                        </table>
+                        <table class="table_2">
+                            <tr aria-colspan="2">
+                                <td class="like"><label for="like">What would you like in particular webpage:</label></td>
+                            </tr>
+                            <tr aria-colspan="2">
+                                <td class="like"><textarea name="like" cols="" rows="" placeholder="What would you like?"></textarea></td>
+                            </tr>
+                            <tr aria-colspan="2">
+                                <td class="features"><label for="features">What Features can we add to make webpage better:</label></td>
+                            </tr>
+                            <tr aria-colspan="2">
+                                <td class="features"><textarea name="features" id="features" cols="" rows="" placeholder="What features can we add ?"></textarea></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="btn btn_3" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_row">
+            <div class="col_1">
+                <ul class="nav_section">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col_2">
+                <ul class="social_links">
+                    <li><a href="#" class="logo"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="logo"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#" class="logo"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_row">
+            <p>This webpage is made with HTML and CSS.This page has no Copyrights<br>This page is yours, you can do whatever you wish.</p>
+            <p>Build with <i class="fa fa-heart-o"></i> in the beautiful city of Kolkata</p>
+        </div>
+        
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            var icon = document.querySelector("i")
+            icon.classList.toggle('fa-bars')
+            icon.classList.toggle('fa-rectangle-xmark')
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        
+    </script>
+
+
+</body>
+</html>

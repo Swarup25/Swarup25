@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.cover{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("fire_kissed_water-wallpaper-1920x1080.jpg");
+}
+.box{
+    background-color: beige;
+    position: relative;
+    height: 515px;
+    width: 385px;
+    margin: 51px auto;
+    border-radius: 10px;
+    padding: 35px;
+}
+.box h2{
+    text-align: center;
+    font-size: 35px;
+}
+.inputBox{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.inputBox #userid{
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: solid 1px grey;
+
+}
+.inputBox #full_name{
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: solid 1px grey;
+
+}
+.inputBox #email{
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: solid 1px grey;
+
+}
+.inputBox #password{
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: solid 1px grey;
+
+}
+.inputBox #address{
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: solid 1px grey;
+
+}
+.sub_btn{
+    padding: 10px;
+}
+.btn{
+    width: 60%;
+    padding: 10px 30px;
+    background: linear-gradient(to right, rgb(240, 4, 4),rgb(248, 191, 3));
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 0px 20px 1px rgb(255, 139, 255);
+}
+.profile_pic{
+    margin-top: 6px;
+    width: 385px;
+    text-align: center;
+}
+.profile_pic img{
+    width: 115px;
+    height:110px;
+    margin-bottom: 12px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 9px 1px rgb(255, 113, 113);
+}
+.logout{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
